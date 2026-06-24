@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /* Variables & Base Styles */
 :root {
     --primary: #075E54; /* WhatsApp Dark Green */
