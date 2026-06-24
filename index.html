@@ -17,16 +17,12 @@
     <nav class="navbar">
         <div class="container nav-container">
             <div class="logo">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="url(#logo-gradient)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="logo-img">
-                    <defs>
-                        <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stop-color="var(--primary-light)" />
-                            <stop offset="100%" stop-color="var(--accent)" />
-                        </linearGradient>
-                    </defs>
-                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
-                    <path d="M12 8v8"></path>
-                    <path d="M8 12h8"></path>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="logo-img">
+                    <mask id="crossMask">
+                        <rect width="24" height="24" fill="white" />
+                        <path d="M13 14h-2v-2H9v-2h2V8h2v2h2v2h-2v2z" fill="black" />
+                    </mask>
+                    <path mask="url(#crossMask)" fill="var(--primary-light)" d="M12 2C6.477 2 2 6.029 2 11c0 2.849 1.438 5.394 3.665 7.027L4 22l4.316-1.92A10.825 10.825 0 0 0 12 20c5.523 0 10-4.029 10-9s-4.477-9-10-9z"/>
                 </svg>
                 <span class="logo-text">BizBot</span>
             </div>

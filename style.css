@@ -11,6 +11,9 @@
     --text-dark: #1A202C;
     --success: #25D366;
     
+    --nav-bg: rgba(10, 22, 40, 0.9);
+    --nav-border: rgba(255, 255, 255, 0.05);
+    
     --radius-sm: 8px;
     --radius-md: 16px;
     --radius-lg: 24px;
@@ -25,6 +28,10 @@
         --text-main: #0F172A;
         --text-muted: #475569;
         --text-dark: #0F172A;
+        
+        --nav-bg: rgba(255, 255, 255, 0.9);
+        --nav-border: rgba(0, 0, 0, 0.05);
+        
         /* Slight adjustments to primary colors for better light mode contrast */
         --primary-light: #0D7A6D;
         --accent: #00A38D;
@@ -148,10 +155,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar.scrolled {
-    background: rgba(10, 22, 40, 0.9);
+    background: var(--nav-bg);
     backdrop-filter: blur(10px);
     padding: 15px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid var(--nav-border);
 }
 
 .nav-container {
