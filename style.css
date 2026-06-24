@@ -17,6 +17,17 @@
     --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-dark: #FFFFFF;
+        --bg-card: #F3F4F6;
+        --bg-light: #E5E7EB;
+        --text-main: #1A202C;
+        --text-muted: #4A5568;
+        --text-dark: #1A202C;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -106,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-outline {
     background: transparent;
     border: 2px solid var(--primary-light);
-    color: white;
+    color: var(--text-main);
 }
 
 .btn-outline:hover {
@@ -161,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Inter', sans-serif;
     font-weight: 800;
     font-size: 1.5rem;
-    color: white;
+    color: var(--text-main);
 }
 
 .nav-links {
@@ -177,14 +188,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-links a:hover {
-    color: white;
+    color: var(--text-main);
 }
 
 .mobile-menu-toggle {
     display: none;
     background: none;
     border: none;
-    color: white;
+    color: var(--text-main);
     cursor: pointer;
 }
 
@@ -640,7 +651,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: color 0.3s;
 }
 
-.currency-label.active { color: white; }
+.currency-label.active { color: var(--text-main); }
 
 .switch {
     position: relative;
@@ -739,7 +750,7 @@ input:checked + .slider:before { transform: translateX(26px); }
 }
 
 .plan-features i { color: var(--accent); width: 20px; height: 20px; }
-.plan-features strong { color: white; }
+.plan-features strong { color: var(--text-main); }
 .pricing-note { margin-top: 48px; color: var(--text-muted); font-size: 0.875rem; }
 
 /* FAQ Section */
@@ -815,7 +826,7 @@ input:checked + .slider:before { transform: translateX(26px); }
     border: 1px solid rgba(255,255,255,0.1);
     padding: 16px 24px;
     border-radius: var(--radius-sm);
-    color: white;
+    color: var(--text-main);
     font-size: 1rem;
     font-family: inherit;
 }
@@ -861,7 +872,7 @@ input:checked + .slider:before { transform: translateX(26px); }
 
 .link-column h4 {
     margin-bottom: 24px;
-    color: white;
+    color: var(--text-main);
 }
 
 .link-column a {
