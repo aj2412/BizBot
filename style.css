@@ -19,12 +19,15 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-        --bg-dark: #FFFFFF;
-        --bg-card: #F3F4F6;
-        --bg-light: #E5E7EB;
-        --text-main: #1A202C;
-        --text-muted: #4A5568;
-        --text-dark: #1A202C;
+        --bg-dark: #F8FAFC;
+        --bg-card: #FFFFFF;
+        --bg-light: #F1F5F9;
+        --text-main: #0F172A;
+        --text-muted: #475569;
+        --text-dark: #0F172A;
+        /* Slight adjustments to primary colors for better light mode contrast */
+        --primary-light: #0D7A6D;
+        --accent: #00A38D;
     }
 }
 
@@ -164,8 +167,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-img {
-    height: 32px;
-    width: auto;
+    height: 42px;
+    width: 42px;
 }
 
 .logo-text {
