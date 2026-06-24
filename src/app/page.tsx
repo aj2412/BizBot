@@ -3,9 +3,11 @@
 
 import { useEffect } from 'react';
 import Link from 'next/link';
+import { createIcons, icons } from 'lucide';
 
 export default function Home() {
   useEffect(() => {
+    createIcons({ icons });
 
     
     // --- 1. Navbar Scroll Effect ---
@@ -102,7 +104,7 @@ export default function Home() {
             waitlistForm.reset();
             
             submitBtn.innerHTML = '<span>Join the Waitlist</span><i data-lucide="arrow-right"></i>';
-            lucide.createIcons(); // Re-render icon
+            createIcons({ icons }); // Re-render icon
             submitBtn.disabled = false;
             
         }, 1500);
